@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronita</title>
+    <style>
+        /* CSS para centrar y estilizar la página */
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f3e8; /* Color de fondo suave */
+            font-family: Arial, sans-serif;
+            color: #d4a017; /* Color dorado para el texto */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .coronita {
+            font-size: 100px; /* Tamaño grande para la coronita */
+            animation: pulso 1.5s infinite; /* Aplica la animación de pulso */
+        }
+
+        .mensaje {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        /* Definición de la animación */
+        @keyframes pulso {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2); /* Tamaño máximo en el pulso */
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Corona como emoji y mensaje -->
+        <div class="coronita">👑</div>
+        <div class="mensaje">Aquí está tu coronita, princesa</div>
+    </div>
+</body>
+</html>
